@@ -1,0 +1,44 @@
+<!-- ES6 Practice -->
+
+<!--function-->
+<!-- Default Parameter -->
+<script>
+  function fullName(fName, lName = "Pandey") {
+    return fName + lName;
+  }
+  console.log(fullName("Ravi "));
+</script>
+
+<!-- Templete Literal(Templete String) -->
+<script>
+  let name = "Ravikant";
+  let age = 35;
+  let address = "Deoria";
+  console.log(`My name is ${name} my age is ${age} and I am from ${address}`);
+</script>
+
+<!-- Array Destructuring -->
+<script>
+  let myName, myAge;
+  let array = ["Ravikant", 35];
+  [myName, myAge] = array;
+  console.log(myName, myAge);
+</script>
+
+<script>
+  let one, two, three, four, five;
+  let lang = ["enlish", "japanese", "chinese", "spanish", "french"];
+  [one, two, three, four, five] = lang;
+  console.log(one, four);
+</script>
+
+<!-- Object Destructuring -->
+<script>
+  let myVillage, myDist;
+  let obj = { myVillage: "Bankata", myDist: "Deoria" };
+  ({ myVillage, myDist } = obj);
+  console.log(myVillage, myDist);
+  console.log(
+    `Hello! Everyone I am ${myName} my age is ${myAge} years I am from ${myVillage} and my district is ${myDist} I knows and speak two language ie. ${one} and ${four}`
+  );
+</script>
