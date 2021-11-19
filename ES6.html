@@ -42,3 +42,19 @@
     `Hello! Everyone I am ${myName} my age is ${myAge} years I am from ${myVillage} and my district is ${myDist} I knows and speak two language ie. ${one} and ${four}`
   );
 </script>
+
+<script>
+  let brand, price, charger;
+  let mobile = {
+    brand: "MI",
+    price: 10000,
+    charger: {
+      chargerQuality: "strong",
+      battery: "5000mhz",
+    },
+  };
+  ({ brand, price, charger } = mobile);
+  console.log(
+    `I have a ${brand} mobile device of Rs. ${price} which is ${charger.chargerQuality} and having ${charger.battery} battery.`
+  );
+</script>
